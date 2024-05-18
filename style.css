@@ -25,10 +25,6 @@ ol {
   counter-reset: list;
 }
 
-footer {
-  text-align: center;
-}
-
 li {
   /* 作用域限制在 li 和其子元素中 */
   --stop: calc(100% / var(--length) * var(--i));
@@ -37,7 +33,6 @@ li {
   --h: calc((var(--i) - 1) * (180 / var(--length)));
   --c1: hsl(var(--h), 71%, var(--l));
   --c2: hsl(var(--h), 71%, var(--l2));
-
   position: relative;
   counter-increment: list;
   max-width: 45rem;
@@ -100,4 +95,8 @@ h3::before {
   h3::before {
     margin-left: 1.5rem;
   }
+}
+
+footer {
+  text-align: center;
 }
